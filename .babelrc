@@ -1,0 +1,24 @@
+{
+  "presets": [
+    "next/babel",
+    "latest",
+    "stage-0"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["."],
+      "alias": {
+        "dva": "dva-no-router",
+        "styles": "./styles"
+      },
+      "cwd": "babelrc"
+    }],
+    "transform-decorators-legacy",
+    [
+      "import",
+      {
+        "libraryName": "antd-mobile"
+      }
+    ]
+  ]
+}

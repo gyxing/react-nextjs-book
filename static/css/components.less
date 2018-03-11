@@ -1,0 +1,38 @@
+@import "base.less";
+
+.dd-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  border-bottom: solid 1px #eee;
+  .dd-header-left{
+    flex: 1;
+    .all-center
+  }
+  .dd-header-right{
+    flex: 1;
+    .all-center
+  }
+  .dd-header-center{
+    flex: 7;
+    .all-center;
+    font-size: 18px;
+  }
+}
+
+.dd-footer{
+  height: 55px;
+  .dd-footer-box{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    border-top: solid 1px #eee;
+    z-index: 10;
+  }
+}
